@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Xor</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+</head>
+<body>
+	<h2>Xor</h2>
+	<p id="demo"></p>
+	<input placeholder="enter L value" name="L" id="l"/>
+	<input placeholder="enter R value" name ="R" id="r"/>
+
+	<button type="button" onclick ="myFunction()" >Xor</button>
+	<script>
+		function myFunction(){
+			l = document.getElementById('l').value;
+			r = document.getElementById('r').value;
+			c = l^r;
+
+			if(c%2 == 0){
+				document.write("even");
+			}
+			else{
+				document.write("odd");
+			}
+
+		}
+	</script>
+
+</body>
+</html>

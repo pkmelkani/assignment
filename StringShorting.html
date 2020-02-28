@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Shorting</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+</head>
+<body>
+	<h2>String Sorting</h2>
+	<p id="sort"></p>
+	<button type="button" onclick="myFunction()">Short</button>
+	<script>
+		var val = [" name " , " pawan ", " ramesh ", " ajay"];
+		document.getElementById('sort').innerHTML = val;
+		function myFunction(){
+			val.sort();
+			document.write(val);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Convertor</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+</head>
+<body>
+	<h2>Time Convertor</h2>
+	<p id="demo"></p>
+	<input  placeholder="enter seconds" name = "seconds" id = "seconds">
+	<button type="button" onclick="TimeConvertor()">Convert</button>
+	<script>
+		function TimeConvertor(){
+			num = document.getElementById('seconds').value;
+			if(num<3600 && num!=null){
+				m = Math.floor(num/60);//minutes
+				s = num%60;//second
+				document.write(m+" minutes"+" : "+s+" seconds").toString();
+			}	
+			else{
+				h = Math.floor(num/3600);//hours
+				a = num%3600;
+				m = Math.floor(a/60);//minutes
+				s = num%60;//second
+				document.write(h+" hours"+":"+m+" minutes"+":"+s+" seconds").toString();
+			}
+		}
+	</script>
+</body>
+</html>
